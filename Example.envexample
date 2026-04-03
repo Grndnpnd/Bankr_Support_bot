@@ -1,0 +1,24 @@
+# ── Required ──────────────────────────────────────────────────────────────────
+DISCORD_TOKEN=your_discord_token_here
+OLLAMA_API_KEY=your_ollama_api_key_here
+
+# ── Ollama ────────────────────────────────────────────────────────────────────
+OLLAMA_URL=https://ollama.com
+OLLAMA_MODEL=nemotron-3-nano:30b-cloud
+
+# ── Docs ──────────────────────────────────────────────────────────────────────
+DOCS_URL=https://docs.bankr.bot/llms-full.txt
+DOCS_REFRESH_HOURS=6
+
+# ── Channels (comma-separated IDs, leave empty to monitor all) ────────────────
+MONITORED_CHANNEL_IDS=
+
+# ── Conversation ──────────────────────────────────────────────────────────────
+CONVERSATION_TTL_MINUTES=30
+REFLAG_COOLDOWN_MINUTES=15
+
+# ── Semantic search tuning ────────────────────────────────────────────────────
+CHUNK_SIZE=600
+CHUNK_OVERLAP=80
+TOP_K_CHUNKS=6
+MAX_RETRIEVED_CHARS=8000
