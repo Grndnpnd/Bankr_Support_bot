@@ -31,7 +31,7 @@ OLLAMA_URL      = os.getenv("OLLAMA_URL", "https://ollama.com")
 OLLAMA_MODEL    = os.getenv("OLLAMA_MODEL", "nemotron-3-nano:30b-cloud")
 
 DOCS_URL              = os.getenv("DOCS_URL", "https://docs.bankr.bot/llms-full.txt")
-DOCS_REFRESH_HOURS    = int(os.getenv("DOCS_REFRESH_HOURS", "6"))
+DOCS_REFRESH_HOURS    = int(os.getenv("DOCS_REFRESH_HOURS", "12"))
 
 # Channels to monitor (empty = all channels)
 MONITORED_CHANNEL_IDS = [int(x) for x in os.getenv("MONITORED_CHANNEL_IDS", "").split(",") if x.strip()]
