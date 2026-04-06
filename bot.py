@@ -450,6 +450,8 @@ Channel routing — only use these as a last resort:
             return
         if message.id in self._handled_message_ids:
             return
+        if MONITORED_CHANNEL_IDS and message.channel.id not in MONITORED_CHANNEL_IDS:
+        return    
 
         is_mentioned = self.user in message.mentions
         is_reply_to_bot = (
